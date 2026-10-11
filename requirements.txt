@@ -1,0 +1,9 @@
+# Install CUDA 12.8 PyTorch wheels as described in README before these requirements.
+torch==2.9.1
+torchvision==0.24.1
+transformers==5.12.1
+numpy==2.3.5
+av==19.0.1
+Pillow==12.3.0
+PyYAML==6.0.3
+# Native Megatron/Bridge and Transformer Engine setup is documented separately.

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "format-demo-001",
+    "source_id": "format-demo-video",
+    "video": "videos/example.mp4",
+    "question": "What happens after the person opens the door?",
+    "choices": [
+      "The person sits down.",
+      "The person walks outside.",
+      "The person picks up a book.",
+      "The person turns on a lamp."
+    ],
+    "answer": 1,
+    "timestamp": 93.4
+  }
+]
