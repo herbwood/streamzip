@@ -1,5 +1,9 @@
 # StreamZip: Budget-Conditioned Post-Training for Streaming Video Language Models
 
+<p align="center">
+  <img src="streamzip_overview.png" alt="FORGE overview" width="100%">
+</p>
+
 Official implementation of **StreamZip**. This is a source-only release; model checkpoints, videos, annotations, and experiment outputs are not included.
 
 ## Abstract
@@ -56,11 +60,7 @@ StreamZip trains one answerer across four visual-memory budgets:
 - 25% (`0.25`)
 - 12.5% (`0.125`)
 
-The provided paper configuration uses Qwen3-VL-8B, rank-8 LoRA on the upper eight language-model blocks, learnable budget embeddings, two natural epochs, and the objective
-
-\[
-\mathcal{L}=\mathcal{L}_{\mathrm{MC}}+0.5\,\mathcal{L}_{\mathrm{margin}}+0.3\,\mathcal{L}_{\mathrm{distill}}.
-\]
+The provided paper configuration uses Qwen3-VL-8B, rank-8 LoRA on the upper eight language-model blocks, learnable budget embeddings, two natural epochs.
 
 Training data are supplied as a four-choice causal video-QA manifest. See [`docs/DATA_FORMAT.md`](docs/DATA_FORMAT.md) and `examples/dataset_manifest.example.json` for the required schema. The included example is synthetic and is not part of the paper dataset.
 
